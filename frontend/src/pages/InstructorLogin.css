@@ -1,0 +1,171 @@
+/* Hallmark · v2.0.0 · existing EduPulse dark system · instructor sign-in */
+/* Critique: Preserve the login's established navy, slate, and indigo tokens. */
+.inst-login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--bg-primary);
+}
+
+.inst-login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.inst-login-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.inst-login-logo {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.inst-login-brand-title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.inst-login-brand-sub {
+  display: block;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.inst-login-portal {
+  display: inline-flex;
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inst-login-heading {
+  margin: 18px 0 26px;
+}
+
+.inst-login-heading h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.inst-login-heading p {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.inst-login-field {
+  margin-bottom: 16px;
+}
+
+.inst-login-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inst-login-field input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.inst-login-field input::placeholder {
+  color: var(--text-muted);
+}
+
+.inst-login-field input:focus-visible,
+.inst-login-submit:focus-visible,
+.inst-login-back:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.inst-login-submit {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.inst-login-submit:hover {
+  background: var(--accent-hover);
+}
+
+.inst-login-submit:active {
+  transform: translateY(1px);
+}
+
+.inst-login-note {
+  margin-top: 20px;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.inst-login-back {
+  display: block;
+  margin: 16px auto 0;
+  padding: 5px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+  transition: color var(--transition);
+}
+
+.inst-login-back:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 520px) {
+  .inst-login-card {
+    padding: 26px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inst-login-submit,
+  .inst-login-back {
+    transition: none;
+  }
+}
